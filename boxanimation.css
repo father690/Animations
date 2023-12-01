@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    position: relative;
+}
+.box1
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px grey;
+    animation: move 6s linear infinite;
+    margin: 70px;
+    position: absolute;
+}
+
+@keyframes move
+{
+    0%
+    {
+        top: 0;
+        left: 0;
+        background-color: aqua;
+        transform: rotate(720deg);
+        transition: 3s;
+    }
+    25%
+    {
+        background-color: greenyellow;
+        top: 0;
+        left: 1250px;
+        transition: 60s;
+    } 
+    50%
+    {
+        background-color: blueviolet;
+        top: 450px;
+        left: 1200px;
+    }
+    75%
+    {
+        background-color: burlywood;
+        top: 450px;
+        left: 0;
+    }
+    100%
+    {
+        background-color: hotpink;
+        top: 0;
+        left: 0;
+    }
+}
+
